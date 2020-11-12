@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <title>Lil yoda!!!!</title>
+    <script src="js/libs/mediaelement.min.js"></script>
 
 
-</html>
-
+</head>
 <body>
-    <img src="alanson.jpg" alt="Smiley face" height="1000" width="1000">
-    <img src="babyyoda.jpg" alt="Smiley face" height="609" width="420">
-    <img src="joshoppen.jpg" alt="Smiley face" height="609" width="420">
-    <img src="arehr.jpeg" alt="Smiley face" height="609" width="420">
-    <img src="me.jpg" alt="Smiley face" height="609" width="420">
-    <img src="mike.png" alt="Smiley face" height="609" width="420">
+    <a onclick="myAudioFunction('A');">
+        <img src="./Lil yoda!!!!_files/alanson.jpg" alt="Smiley face" height="1000" width="1000">
+    </a>
+    <a onclick="myAudioFunction('B');">
+        <img src="./Lil yoda!!!!_files/babyyoda.jpg" alt="Smiley face" height="609" width="420">
+    </a>
+    <a onclick="myAudioFunction('C');">
+        <img src="./Lil yoda!!!!_files/joshoppen.jpg" alt="Smiley face" height="609" width="420">
+    </a>
+    <a onclick="myAudioFunction('D');">
+        <img src="./Lil yoda!!!!_files/arehr.jpeg" alt="Smiley face" height="609" width="420">
+    </a>
+    <a onclick="myAudioFunction('E');">
+        <img src="./Lil yoda!!!!_files/me.jpg" alt="Smiley face" height="609" width="420">
+    </a>
+    <a onclick="myAudioFunction('F');">
+        <img src="./Lil yoda!!!!_files/mike.png" alt="Smiley face" height="609" width="420">
+    </a>
 
-    <p><font size ="500"><a href="http://thaflock.org/">BIG things happening soon!</a></font></p>
+    <p><font size="500"><a href="http://thaflock.org/">BIG things happening soon!</a></font></p>
+    <script>
+        var aAudio = new Audio('alex.mp3');
+        var bAudio = new Audio('babyyoda.mp3')
+        var cAudio = new Audio('josh.mp3')
+        var dAudio = new Audio('alexr.mp3')
+        var eAudio = new Audio('ryan.mp3')
+        var fAudio = new Audio('mike.mp3')
+            function myAudioFunction(letter) {
+            if(letter == 'A') {
+                aAudio.play();
+            } else if(letter == 'B') {
+                bAudio.play();
+            } else if(letter == 'C') {
+                cAudio.play();
+            }else if(letter == 'D') {
+                dAudio.play();
+            }else if(letter == 'E') {
+                eAudio.play();
+            }else if(letter == 'F') {
+                fAudio.play();
+            }
+        }
+    </script>
+
     
     <script>
-    <a onclick="document.getElementById('mike.mp3').play();">
-     <img src="mike.png">
-    </a>
-    </script> 
-</body>
-</html>
+        var mySound = new MediaElement('mySound');
+        $('.play a').mouseover(function(){ mySound.play() });
+
+    </script>
+
+
+</body></html>
